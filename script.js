@@ -43,7 +43,7 @@ envelope.addEventListener("click", () => {
 
 // Logic to move the NO btn
 
-noBtn.addEventListener("mouseover", () => {
+function moveNoButton() {
     const min = 60;
     const max = 100;
 
@@ -55,6 +55,20 @@ noBtn.addEventListener("mouseover", () => {
 
     noBtn.style.transition = "transform 0.3s ease";
     noBtn.style.transform = `translate(${moveX}px, ${moveY}px)`;
+}
+
+// Desktop: mouseover
+noBtn.addEventListener("mouseover", moveNoButton);
+
+// Mobile: click/touch (prevents it from getting stuck)
+noBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    moveNoButton();
+});
+
+noBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    moveNoButton();
 });
 
 // Logic to make YES btn to grow

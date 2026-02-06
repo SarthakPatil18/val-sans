@@ -290,3 +290,154 @@ p {
         transform: scale(1.2);
     }
 }
+
+
+/* ========================================
+   RESPONSIVE DESIGN - Mobile & Tablet
+   ======================================== */
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #envelope-container p {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    #envelope {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .cat {
+        width: 180px !important;
+    }
+
+    .letter-window.final .cat {
+        width: 120px !important;
+    }
+
+    .btn {
+        width: 90px;
+    }
+
+    .yes-btn, .no-btn {
+        width: 90px;
+    }
+
+    .final-text {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .letter-window {
+        padding-top: 120px;
+        gap: 5px;
+    }
+
+    /* Music Player - Compact Mobile */
+    .music-player {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 12px;
+        border-radius: 30px;
+    }
+
+    .player-content {
+        gap: 8px;
+    }
+
+    .play-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .track-info {
+        display: none; /* Hide on very small screens */
+    }
+
+    .music-icon {
+        font-size: 20px;
+    }
+
+    .heart {
+        font-size: 18px;
+    }
+}
+
+/* Tablet Devices (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    #envelope-container p {
+        font-size: 32px;
+    }
+
+    #envelope {
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .cat {
+        width: 200px;
+    }
+
+    .letter-window.final .cat {
+        width: 150px;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    .yes-btn, .no-btn {
+        width: 100px;
+    }
+
+    .final-text {
+        font-size: 18px;
+    }
+
+    .letter-window {
+        padding-top: 140px;
+    }
+
+    /* Music Player - Tablet */
+    .music-player {
+        padding: 12px 15px;
+    }
+
+    .track-name {
+        font-size: 12px;
+    }
+
+    .track-artist {
+        font-size: 10px;
+    }
+}
+
+/* Landscape Mobile Phones */
+@media (max-height: 500px) and (orientation: landscape) {
+    .letter-window {
+        padding-top: 60px;
+        gap: 2px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .cat {
+        width: 150px !important;
+    }
+
+    .music-player {
+        bottom: 5px;
+        right: 5px;
+        padding: 8px 10px;
+    }
+}
